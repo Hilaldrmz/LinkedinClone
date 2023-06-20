@@ -1,3 +1,4 @@
+/* Başlık ve Arka Plan */
 .navbarbg {
   background-color: white;
   left: 0;
@@ -5,53 +6,79 @@
   top: 0;
   width: 100vw;
   z-index: 100;
-  border-bottom: 1px solid;
   margin: auto;
 }
 
 
+/* Navbar Menüsü */
+.navbar-nav {
+  align-items: center;
+  float: right;
+  align-content: end;
+  margin-right: 0px;
+}
 
+
+/* Premium Upsell Link */
+.premium-upsell-link {
+  color: #915907;
+  font-size: 10px;
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+  align-content: end;
+}
+
+/* Arama Girişi */
 input.searche {
-  height: 34px;
-  max-width: 500px;
+  height: 30px;
+  max-width: 450px;
   background-color: #eef3f8 ;
   border: 0;
   line-height: 1.75;
   font-weight: 400;
-  font-size: 14px;
-  padding: 0 40px;
+  font-size: 12px;
+  padding: 0 15px;
   margin-left: 1px;
+  margin-right: 10px;
 }
 
 input.searche::placeholder {
-  font-size: 18px;
+  font-size: 12px;
   color: gray;
   background-image: url(../assets/search-solid.svg);
   background-repeat: no-repeat;
-  background-size: 12%;
-  background-position:1px;
-  text-align:center;
-  
+  background-size: 15px;
+  background-position:left;
+  text-align:start;
+  padding-left: 25px;
 }
 
+.form-inline{
+  margin-right: 100px;
+}
 
+.form-inline .form-control{
+  width: 300px;
+}
+
+/* Sayfa Arka Planı */
 .body {
-  background-color:transparent;
+  background-color: #f3f2ef;
+  overflow-x: hidden;
 }
 
+/* Menü Metni */
 .menutext {
-  font-size:medium;
+  font-size: 11px;
   font-family: Arial, Helvetica, sans-serif;
-  color: rgba(0,0,0,0.6);
+  color: rgba(0, 0, 0, 0.6);
   margin: 0;
   padding-top: 5px;
   font-weight: lighter;
 }
 
-.menutext:hover {
-  color: black;
-}
-
+/* Medya Metni Düğmesi */
 button.mediatext {
   color: #5f5f5f;
 }
@@ -60,6 +87,7 @@ button.mediatext:hover {
   color: #5f5f5f;
 }
 
+/* Medya Metni */
 .mediatext {
   font-size: 15px;
   font-weight: bold;
@@ -67,20 +95,27 @@ button.mediatext:hover {
   color: #5f5f5f;
 }
 
+/* İkonlar */
 i {
   color: gray;
   margin-top: 8px;
 }
 
-
-i:hover {
-  color: black;
+/* Geçişli Bağlantılar */
+.nav-link:hover {
+  color: black !important;
 }
 
+.nav-link {
+  padding: 0;
+}
+
+/* İçerik Girişi */
 input.content {
   border-radius: 40px;
   height: 45px;
 }
+
 input.content::placeholder {
   font-weight: bolder;
   font-size: 14px;
@@ -90,16 +125,51 @@ input.content::placeholder {
   background-size: auto;
 }
 
+/* Kart */
 div.card {
   border-radius: 10px;
+  width: 550px;
+
 }
 
+/* Başlık */
 .header {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: bolder;
 }
 
+/* Profil Fotografi */
+.profile-photo{
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid white;
+
+}
+
+/*Yapiskan Kart */
+.sticky-card{
+  display: flex;
+  position: sticky;
+  z-index: 10;
+  top: 4rem;
+  overflow: visible;
+}
+
+/* Gonderi Kismi Profil Fotografi */
+.post-profile-photo{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  border: 2px solid white;
+}
+
+/* Görünüm */
 .view {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -108,12 +178,14 @@ div.card {
   color: #5f5f5f;
 }
 
+/* Kategoriler */
 .categories {
   font-size: 13px;
   font-weight: bold;
   color: #0a66c2;
 }
 
+/* Liste Öğeleri */
 li {
   font-size: 14px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -121,6 +193,7 @@ li {
   font-weight: bold;
 }
 
+/* Bağlantılar */
 .link {
   font-size: 12px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -128,6 +201,7 @@ li {
   color: #5f5f5f;
 }
 
+/* Referans Düğmesi */
 button.ref {
   color: white;
 }
@@ -136,16 +210,22 @@ button.ref:hover {
   color: #5f5f5f;
 }
 
+/* Gönderi Fotoğrafı */
 .postphoto {
   border-radius: 50%;
   width: 50px;
   height: 50px;
 }
+
+/* Gönderi Metni */
 .posttext {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   font-size: 14px;
-  margin-left: 8px;
+
 }
 
+.card-text{
+  margin-top: 5px;
+}
